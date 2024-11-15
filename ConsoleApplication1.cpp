@@ -4,10 +4,12 @@
 #include <iostream>
 #include <fstream>  // для роботи з файлами
 #include <cmath>    // для обчислення квадратів
-
+#include <Windows.h>
 using namespace std;
 
 int main() {
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
     // Відкриваємо файл chusla.txt для читання
     ifstream inputFile("chusla.txt");
 
